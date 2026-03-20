@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Panel de Usuario</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+/* CONTENEDOR */
+.panel{
+    width:340px;
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* HEADER */
+.header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:15px;
+}
+
+.header h2{
+    color:#2e5e4e;
+    margin:0;
+}
+
+/* PERFIL */
+.perfil{
+    display:flex;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.perfil img{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+.info h3{
+    margin:0;
+}
+
+.info p{
+    margin:2px 0;
+    color:gray;
+    font-size:14px;
+}
+
+.btn-edit{
+    margin-left:auto;
+    background:#2e5e4e;
+    color:white;
+    border:none;
+    padding:6px 10px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:12px;
+}
+
+/* RESUMEN */
+.resumen{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:15px;
+}
+
+.box{
+    width:30%;
+    background:#f7f7f7;
+    padding:8px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.box span{
+    display:block;
+    font-weight:bold;
+    color:#2e5e4e;
+}
+
+/* TARJETAS */
+.card{
+    background:#f9f9f9;
+    padding:10px;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+.card h4{
+    margin:0 0 5px 0;
+}
+
+/* BOTONES */
+.btn{
+    display:block;
+    width:100%;
+    padding:8px;
+    margin-top:8px;
+    background:#2e5e4e;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* TOTAL */
+.total{
+    font-weight:bold;
+    text-align:right;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="panel">
+
+    <!-- TITULO -->
+    <div class="header">
+        <h2>Panel</h2>
+    </div>
+
+    <!-- PERFIL -->
+    <div class="perfil">
+        <img src="foto.png" alt="usuario">
+        <div class="info">
+            <h3>Camilo</h3>
+            <p>Consumidor</p>
+        </div>
+        <button class="btn-edit">Editar</button>
+    </div>
+
+
+    <div class="resumen">
+        <div class="box">
+            Pedidos
+            <span>12</span>
+        </div>
+        <div class="box">
+            Favoritos
+            <span>8</span>
+        </div>
+        <div class="box">
+            En camino
+            <span>2</span>
+        </div>
+    </div>
+
+    <!-- PEDIDO -->
+    <div class="card">
+        <h4>Último pedido</h4>
+        <p>Tomate Cherry</p>
+        <p style="color:gray;">En camino - 12/03</p>
+    </div>
+
+    <!-- PRODUCTO -->
+    <div class="card">
+        <h4>Producto</h4>
+        <p>Aguacate Hass - $18</p>
+    </div>
+
+    <!-- CARRITO -->
+    <div class="card">
+        <h4>Carrito</h4>
+        <p>Tomate x1 - $28</p>
+        <p>Aguacate x2 - $36</p>
+        <p class="total">Total: $64</p>
+        <button class="btn">Ir a pagar</button>
+    </div>
+
+</div>
+
+</body>
+</html>
